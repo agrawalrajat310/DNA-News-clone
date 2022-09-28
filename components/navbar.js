@@ -99,35 +99,43 @@ function footer(){
 </div>`
 }
 function sidebar(){
-    return `  <div> &nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-latestnews.svg"
+    return `  <div id="latestnews"> &nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-latestnews.svg"
     alt="">&nbsp;&nbsp;Latest News</div>
-<div> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-photos.svg" alt="">&nbsp Photos
+<div id="photos"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-photos.svg" alt="">&nbsp Photos
 </div>
-<div> &nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-cricket.svg" alt="">&nbsp; Ind
+<div id="indAus"> &nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-cricket.svg" alt="">&nbsp; Ind
 vs Aus</div>
-<div>&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-videos.svg" alt="">&nbsp; Videos
+<div id="videos">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-videos.svg" alt="">&nbsp; Videos
 </div>
-<div>&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-explainer.svg" alt="">&nbsp;
+<div id="explainers">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-explainer.svg" alt="">&nbsp;
 Explainers</div>
-<div>&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-india.svg" alt="">&nbsp; India
+<div id="india">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-india.svg" alt="">&nbsp; India
 </div>
-<div>&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-entertainment.svg" alt="">&nbsp;
+<div id="entertainment">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-entertainment.svg" alt="">&nbsp;
 Entertainment</div>
-<div>&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-sports.svg" alt="">&nbsp; Sports
+<div id="sports">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-sports.svg" alt="">&nbsp; Sports
 </div>
-<div>&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-viralNews.svg" alt="">&nbsp;
+<div id="viralnews">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-viralNews.svg" alt="">&nbsp;
 Viral News</div>
-<div>&nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-lifestyle.svg" alt="">&nbsp;
+<div id="lifestyle">&nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-lifestyle.svg" alt="">&nbsp;
 Lifestyle</div>
-<div> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-education.svg" alt="">&nbsp;
+
+<div id="education"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-education.svg" alt="">&nbsp;
 Edducation</div>
-<div>&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-business.svg" alt="">&nbsp;
+
+<div id="business">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-business.svg" alt="">&nbsp;
 Business</div>
-<div>&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-world.svg" alt="">&nbsp; World
+<div id="world">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-world.svg" alt="">&nbsp; World
 </div>
-<div> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/ezmall-icon1.png" alt="">&nbsp; Ezmall
+<div id="ezmall"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/ezmall-icon1.png" alt="">&nbsp; Ezmall
 </div>`
 }
+function newsSlider(){
+    return ` <div id="TP">Top News</div>   
+    <div id="breaking_news"></div>`
+}
+
+export {newsSlider}
 export {footer}
 export {navbar}
 export {sidebar}
