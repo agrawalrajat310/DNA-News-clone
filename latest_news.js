@@ -33,4 +33,4 @@ function appendData(data){
         results.append(div)
     });
 
-}
+};
