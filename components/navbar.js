@@ -1,5 +1,6 @@
-function navbar(){
-    return `  <div id="container">
+function navbar() {
+    
+  return `  <div id="container">
     <div class="logo">
         <img src="https://english.cdn.zeenews.com/static/apprun/dna/icons/logodna.png" alt="DNA_logo">
     </div>
@@ -8,10 +9,10 @@ function navbar(){
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
           </svg>
     </div>
-</div>`
+</div>`;
 }
-function footer(){
-    return `<div id="ftop">
+function footer() {
+  return `<div id="ftop">
     <div class="flogo">
         <img src="https://english.cdn.zeenews.com/static/apprun/dna/icons/logodna.png" alt="">
     </div>
@@ -61,15 +62,12 @@ function footer(){
         &nbsp; &nbsp; &nbsp;
         <a href="https://www.dnaindia.com/privacy-policy">PRIVACY-POLICY</a>
         &nbsp; &nbsp; &nbsp;
-
     </div>
-
 </div>
 
 <div id="fbottom">
     <div>
         <P>PARTNER SITE</P>
-
     </div>
     &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
     &nbsp;
@@ -90,16 +88,15 @@ function footer(){
         &nbsp; &nbsp; &nbsp;
         <a href="https://www.wionews.com/">WION</a>
         &nbsp; &nbsp; &nbsp;
-
     </div>
-
 </div>
 <div>
     <p>©1998-2022 Diligent Media Corporation Limited, All Rights Reserved.</p>
-</div>`
+</div>`;
 }
-function sidebar(){
-    return `  <div id="latestnews"> &nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-latestnews.svg"
+
+function sidebar() {
+  return `  <div id="latestnews"> &nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-latestnews.svg"
     alt="">&nbsp;&nbsp;Latest News</div>
 <div id="photos"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-photos.svg" alt="">&nbsp Photos
 </div>
@@ -128,14 +125,15 @@ Business</div>
 <div id="world">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-world.svg" alt="">&nbsp; World
 </div>
 <div id="ezmall"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/ezmall-icon1.png" alt="">&nbsp; Ezmall
-</div>`
-}
-function newsSlider(){
-    return ` <div id="TP">Top News</div>   
-    <div id="breaking_news"></div>`
+</div>`;
 }
 
-export {newsSlider}
-export {footer}
-export {navbar}
-export {sidebar}
+function newsSlider() {
+  return ` <div id="TP">Top News</div>   
+    <div id="breaking_news"></div>`;
+}
+
+export { newsSlider };
+export { footer };
+export { navbar };
+export { sidebar };
