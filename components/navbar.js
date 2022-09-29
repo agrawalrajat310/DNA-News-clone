@@ -99,35 +99,76 @@ function footer(){
 </div>`
 }
 function sidebar(){
-    return `  <div> &nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-latestnews.svg"
+    return `  <div id="latestnews"> &nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-latestnews.svg"
     alt="">&nbsp;&nbsp;Latest News</div>
-<div> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-photos.svg" alt="">&nbsp Photos
+<div id="photos"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-photos.svg" alt="">&nbsp Photos
 </div>
-<div> &nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-cricket.svg" alt="">&nbsp; Ind
+<div id="indAus"> &nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-cricket.svg" alt="">&nbsp; Ind
 vs Aus</div>
-<div>&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-videos.svg" alt="">&nbsp; Videos
+<div id="videos">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-videos.svg" alt="">&nbsp; Videos
 </div>
-<div>&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-explainer.svg" alt="">&nbsp;
+<div id="explainers">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-explainer.svg" alt="">&nbsp;
 Explainers</div>
-<div>&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-india.svg" alt="">&nbsp; India
+<div id="india">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-india.svg" alt="">&nbsp; India
 </div>
-<div>&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-entertainment.svg" alt="">&nbsp;
+<div id="entertainment">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-entertainment.svg" alt="">&nbsp;
 Entertainment</div>
-<div>&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-sports.svg" alt="">&nbsp; Sports
+<div id="sports">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-sports.svg" alt="">&nbsp; Sports
 </div>
-<div>&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-viralNews.svg" alt="">&nbsp;
+<div id="viralnews">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-viralNews.svg" alt="">&nbsp;
 Viral News</div>
-<div>&nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-lifestyle.svg" alt="">&nbsp;
+<div id="lifestyle">&nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-lifestyle.svg" alt="">&nbsp;
 Lifestyle</div>
-<div> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-education.svg" alt="">&nbsp;
+
+<div id="education"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-education.svg" alt="">&nbsp;
 Edducation</div>
-<div>&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-business.svg" alt="">&nbsp;
+
+<div id="business">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-business.svg" alt="">&nbsp;
 Business</div>
-<div>&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-world.svg" alt="">&nbsp; World
+<div id="world">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-world.svg" alt="">&nbsp; World
 </div>
-<div> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/ezmall-icon1.png" alt="">&nbsp; Ezmall
+<div id="ezmall"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/ezmall-icon1.png" alt="">&nbsp; Ezmall
 </div>`
 }
+function newsSlider(){
+    return ` <div id="TP">Top News</div>   
+    <div id="breaking_news"></div>`
+}
+function rightSidebar(){
+    return `    <div id="rtrending">
+    <div>TRENDING NEWS TOPICS</div>
+    <div>Narendra Modi</div>
+    <div>Brahmastra</div>
+    <div>Iphone</div>
+</div>
+<div id="popular_story">
+    <div>POPULAR STORIES</div>
+    <div>
+        <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/09/26/2541610-skincare.jpg" alt="">
+    <p>Skincare Essentials: Benefits of using Neem and Aloe Vera for skin</p>
+    </div>
+    <div>
+        <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/09/28/2542083-1303266-969942-navratri-third-day-puja-1.jpg" alt="">
+    <p>Navratri 2022 Day 3: Shubh muhurat, puja vidhi, bhog, mantras to worship Maa Chandraghanta</p>
+    </div>
+    <div>
+        <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/09/27/2541719-india-set-to-become-self-reliant-in-avgas-100-ll-aviation-fuel.jpg" alt="">
+    <p>India set to become self-reliant in AVGAS 100 LL aviation fuel</p>
+    </div>
+    <div>
+        <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/09/26/2541513-congress-rajasthan-pti-1.jpg" alt="">
+    <p>Rajasthan political crisis: Over 90 Congress MLAs threaten to resign in high voltage drama, here’s why</p>
+    </div>
+    <div>
+        <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/09/28/2542231-gavaskar-bavuma.jpg" alt="">
+    <p>'Learn what happened in previous matches': Sunil Gavaskar criticizes Temba Bavuma's call during toss</p>
+    </div>
+</div>
+</div>
+`
+}
+export {rightSidebar}
+export {newsSlider}
 export {footer}
 export {navbar}
 export {sidebar}
