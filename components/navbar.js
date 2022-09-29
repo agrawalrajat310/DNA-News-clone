@@ -134,7 +134,40 @@ function newsSlider(){
     return ` <div id="TP">Top News</div>   
     <div id="breaking_news"></div>`
 }
-
+function rightSidebar(){
+    return `    <div id="rtrending">
+    <div>TRENDING NEWS TOPICS</div>
+    <div>Narendra Modi</div>
+    <div>Brahmastra</div>
+    <div>Iphone</div>
+</div>
+<div id="popular_story">
+    <div>POPULAR STORIES</div>
+    <div>
+        <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/09/26/2541610-skincare.jpg" alt="">
+    <p>Skincare Essentials: Benefits of using Neem and Aloe Vera for skin</p>
+    </div>
+    <div>
+        <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/09/28/2542083-1303266-969942-navratri-third-day-puja-1.jpg" alt="">
+    <p>Navratri 2022 Day 3: Shubh muhurat, puja vidhi, bhog, mantras to worship Maa Chandraghanta</p>
+    </div>
+    <div>
+        <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/09/27/2541719-india-set-to-become-self-reliant-in-avgas-100-ll-aviation-fuel.jpg" alt="">
+    <p>India set to become self-reliant in AVGAS 100 LL aviation fuel</p>
+    </div>
+    <div>
+        <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/09/26/2541513-congress-rajasthan-pti-1.jpg" alt="">
+    <p>Rajasthan political crisis: Over 90 Congress MLAs threaten to resign in high voltage drama, here’s why</p>
+    </div>
+    <div>
+        <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/09/28/2542231-gavaskar-bavuma.jpg" alt="">
+    <p>'Learn what happened in previous matches': Sunil Gavaskar criticizes Temba Bavuma's call during toss</p>
+    </div>
+</div>
+</div>
+`
+}
+export {rightSidebar}
 export {newsSlider}
 export {footer}
 export {navbar}

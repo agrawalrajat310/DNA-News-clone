@@ -161,7 +161,7 @@ footer p:hover {
   width: 11%;
   border-radius: 0px 8px 8px 0px;
   background-color: #aaaaaa;
-  
+
   align-items: center;
   justify-content: center;
 }
@@ -175,6 +175,100 @@ footer p:hover {
   font-size: 17px;
   letter-spacing: 2px;
 }
-#breaking_news p{
-    margin-left: 20px;
+#breaking_news p {
+  margin-left: 20px;
+}
+#right_sidebar {
+  display: grid;
+  width: 25%;
+  margin-right: 10%;
+  height: 600px;
+  height: fit-content;
+}
+#rtrending {
+  height: 250px;
+}
+#rtrending div {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  margin-top: 15px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#rtrending div:nth-child(1) {
+  border-bottom: #ffde2f 2px solid;
+}
+#rtrending div:nth-child(2) {
+  background-color: #f2dd6b;
+  border-radius: 5px;
+  color: #1c1c1c;
+  font-size: 18px;
+}
+#rtrending div:nth-child(3) {
+  background-color: #5564c9;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+}
+#rtrending div:nth-child(4) {
+  background-color: #b993b8;
+  border-radius: 5px;
+  font-size: 18px;
+}
+#popular_story {
+  height: 600px;
+  text-align: center;
+  cursor: pointer;
+}
+#popular_story img {
+  width: 45%;
+}
+#popular_story > div:nth-child(1) {
+  width: 95%;
+  margin: auto;
+  margin-top: 0px;
+  height: 40px;
+  border-bottom: #ffde2f 2px solid;
+  font-size: 18px;
+
+}
+#popular_story > div:nth-child(2) {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#popular_story > div:nth-child(3) {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  margin-bottom: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#popular_story > div:nth-child(4) {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  margin-bottom: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#popular_story > div:nth-child(5) {
+  display: flex;
+  height: 100px;
+
+  align-items: center;
+  margin-bottom: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#popular_story > div:nth-child(6) {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  margin-bottom: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
