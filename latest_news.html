@@ -7,25 +7,44 @@
     <title>Latest NEWS</title>
 </head>
 <style>
-    #results>div{
-        width: 50%;
-        
+  #results>div{
+        /* width: 50%; */
+        /* height: auto; */
         display: flex;
-        gap: 50px;
-        margin-left:28%;
+        gap: 40px;
+        /* margin-left:20%; */
         margin-bottom: 30px;
-        background-color: rgb(244, 245, 247);
+        background-color: rgb(222, 216, 228);
     }
     img{
         width: 200px;
-    } 
+    }
+    #container{
+        display: flex;
+    }
+    #sidebar{
+        border: 1px solid black;
+        width: 25%;
+    }
+    #right_sidebar{
+        border: 1px solid rgb(135, 44, 44);
+        width: 25%;
+    }
+    #results{
+        border: 1px solid rgb(151, 99, 99);
+        width: 50%;
+    }
 
 </style>
 <body>
     <h1> LATEST NEWS</h1>
+   
     <div id="navbar"></div>
-    <div id="results"></div>
+ <div id="container">
     <div id="sidebar"></div>
+    <div id="results"></div>
+    <div id="right_sidebar"></div>
+</div>
     <div id="footer"></div>
 </body>
 </html>
