@@ -132,11 +132,6 @@ function newsSlider() {
     <div id="breaking_news"></div>`;
 }
 
-export { newsSlider };
-export { footer };
-export { navbar };
-export { sidebar };
-
 function rightSidebar() {
   return `    <div id="rtrending">
     <div>TRENDING NEWS TOPICS</div>
@@ -170,8 +165,9 @@ function rightSidebar() {
 </div>
 `;
 }
-export { rightSidebar };
+
 export { newsSlider };
 export { footer };
 export { navbar };
 export { sidebar };
+export { rightSidebar };
