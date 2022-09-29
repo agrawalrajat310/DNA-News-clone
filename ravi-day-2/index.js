@@ -3,10 +3,61 @@
 
 
 
+import { navbar } from "./components/navbar.js";
+
+document.getElementById("navbar").innerHTML = navbar();
+
+import {newsSlider} from './components/navbar.js';
+
+document.getElementById('news_slider').innerHTML=newsSlider();
+
+import { sidebar } from "./components/navbar.js";
+
+document.getElementById('sidebar').innerHTML=sidebar();
+
+import {rightSidebar} from './components/navbar.js';
+
+document.getElementById('right_sidebar').innerHTML=rightSidebar();
 
 
 
 
+import { footer } from "./components/navbar.js";
+
+document.getElementById("footer").innerHTML = footer();
+
+
+let poster = [
+    'Three new credit card rules coming into effect from Oct.',
+    'Ankita Bhandari murder case to be tried in fast-track court; Uttarakhand CM announces Rs 25 lakh compensation for family',
+    'Gandhis still keen on Gehlot contesting party prez poll...',
+    'Amid F-16 strain, US talks of India-Pakistan dialogue',
+    'Centre bans PFI for 5 years under anti-terror law UAPA ...'
+      ]
+      
+      let id;
+      function Start() {
+    
+        let container = document.getElementById("breaking_news");
+    
+        let i = 0;
+      
+        let p = document.createElement("p");
+    
+        let id = setInterval(function () {
+          if (i === 5) {
+            i = 0;
+          }
+          p.innerText = poster[i];
+          container.append(p);
+          i++;
+        }, 2000);
+      }
+      
+      function Stop() {
+         clearInterval(id)
+      }
+      Start()   
 
 
 const arr = [
@@ -31,6 +82,9 @@ const arr = [
         title:'In Pics: PM Modi releases 8 cheetahs from Namibia at Kuno Na...'
      }
 ]
+
+
+
 const slideShow = () => {
     let count = 0;
     let div = document.getElementById("1");
@@ -107,9 +161,7 @@ const append =  (result) => {
        if(el.urlToImage!==null){
         let div = document.createElement("div");
         
-        div.addEventListener("click", function () {
-            Click(el);
-        });
+       
 
         let img=document.createElement("img");
         img.src=el.urlToImage;
@@ -117,6 +169,13 @@ const append =  (result) => {
         let p = document.createElement("p")
         p.innerText=el.title;
 
+        // let data ={
+        //     id:el.url
+        // }
+
+        div.addEventListener("click", function () {
+            Click(el);
+        });
 
         div.append(img,p)
         container.append(div)
@@ -129,9 +188,9 @@ const append =  (result) => {
 }
 
  function Click(el){
-   let data=JSON.parse(localStorage.getItem("india"))||[];
-
-   data.push(el);
-   localStorage.setItem("india",JSON.stringify(data));
+  
+   localStorage.setItem("india",JSON.stringify(el));
+   console.log(el)
+   window.location.href="./details.html";
 
  }
