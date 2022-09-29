@@ -20,7 +20,7 @@
 
 4. User should see different category of news page eg: National, Internation, sports, etc. depending on kind of news, it will vary.
 
-5. User should able to filter and sort news according to their readability..
+5. User should able to filter and sort news according to their readability.
 
 6. User can search for different types of news what the requirement is.                                                   
                                                          
