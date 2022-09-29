@@ -14,6 +14,10 @@ import { newsSlider } from "./components/navbar.js";
 
 document.getElementById("news_slider").innerHTML = newsSlider();
 
+import { rightSidebar } from "./components/navbar.js";
+
+document.getElementById("right_sidebar").innerHTML = rightSidebar();
+
 let poster = [
   "Three new credit card rules coming into effect from Oct.",
   "Ankita Bhandari murder case to be tried in fast-track court; Uttarakhand CM announces Rs 25 lakh compensation for family",
