@@ -29,6 +29,7 @@ let poster = [
 ];
 
 let id;
+
 function Start() {
   let container = document.getElementById("breaking_news");
 
