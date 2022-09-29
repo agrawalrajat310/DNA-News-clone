@@ -108,7 +108,7 @@ const append =  (result) => {
         let div = document.createElement("div");
         
         div.addEventListener("click", function () {
-            Click();
+            Click(el);
         });
 
         let img=document.createElement("img");
@@ -127,3 +127,11 @@ const append =  (result) => {
    
 
 }
+
+ function Click(el){
+   let data=JSON.parse(localStorage.getItem("india"))||[];
+
+   data.push(el);
+   localStorage.setItem("india",JSON.stringify(data));
+
+ }
