@@ -1,7 +1,8 @@
-// e1d001bb4e184ec5b1cabd0da5447752
+
+// https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=e1d001bb4e184ec5b1cabd0da5447752
 
 
-  
+
 import { navbar } from "./components/navbar.js";
 
 document.getElementById("navbar").innerHTML = navbar();
@@ -70,8 +71,10 @@ const SearchNews = async () => {
 
 // Showing Fetch data to container div you can append data to your respective div
 const displayData = (data) => {
+    let container = document.getElementById("indian-news")
+    container.innerHTML=null;
   data.forEach((ele) => {
-    let container = document.getElementById("details");
+   
 
     let div = document.createElement("div");
 
@@ -87,7 +90,6 @@ const displayData = (data) => {
 };
 
 
-
 let poster = [
     'Three new credit card rules coming into effect from Oct.',
     'Ankita Bhandari murder case to be tried in fast-track court; Uttarakhand CM announces Rs 25 lakh compensation for family',
@@ -99,7 +101,7 @@ let poster = [
       let id;
       function Start() {
     
-        let container = document.getElementById("news_slider");
+        let container = document.getElementById("breaking_news");
     
         let i = 0;
       
@@ -118,40 +120,35 @@ let poster = [
       function Stop() {
          clearInterval(id)
       }
-      Start() 
+      Start()   
 
 
-
- const arr = [
+const arr = [
     {
-        url:"https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/06/2536435-edu-main.jpg",
-        title:"From NTA NEET UG 2022 Result to CBSE Compartment Result 2022...",
-        id:1,
-    },
-
-    {
-        url:"https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/05/2536104-teach.jpg",
-        title:"Teacher's day: 5 teachers who transformed education scenario in India",
-        id:2,
+       url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/28/2542170-stations-tb-ani.jpg',
+       title:'Centre gives sneak peek at Indian Railway Stations of the...' 
     },
     {
-        url:"https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/08/2537096-neet-result.jpg",
-        title:"Here are 5 courses Biology students can opt for after Class...",
-        id:3,
-    },
-    {
-        url:" https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/08/24/2532826-nirish-rajput-tb.jpg",
-        title:"Meet IAS officer Nirish Rajput, who sold newspapers, studied...",
-        id:4,
-    },
-    {
-        url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/08/21/2531871-students-4-1.jpg',
-        title:"Are you a college student? These 5 part-time...",
-        id:5,
-    }
- ]
+        url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/17/2539410-pm1.jpg',
+        title:'PM Narendra Modis Birthday: 5 schemes launched by Prime Mini...' 
+     },
+     {
+        url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/16/2539086-2532577-leopard.jpg',
+        title:'Fascinating facts about all 8 big cats...' 
+     },
+     {
+        url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/14/2538609-chenab-bridge.jpg',
+        title:'Chenab Bridge: Indian Railways shares stunning pictures of the...'
+     },
+     {
+        url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/17/2539361-cheetah.jpg',
+        title:'In Pics: PM Modi releases 8 cheetahs from Namibia at Kuno Na...'
+     }
+]
 
- const slideShow = () => {
+
+
+const slideShow = () => {
     let count = 0;
     let div = document.getElementById("1");
     
@@ -160,10 +157,6 @@ let poster = [
 
     let p=document.createElement("p");
     p.innerText=arr[0].title;
-
-    div.onclick=function(){
-        window.location.href="./photo.html"
-    }
    
     div.append(img,p);
     count = count + 1;
@@ -211,5 +204,56 @@ const slideShow2 = () => {
 }
 slideShow2()
 
+// https://newsapi.org/v2/top-headlines?country=in&category=&apiKey=e1d001bb4e184ec5b1cabd0da5447752
 
+let getData = async () => {
 
+    let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=&apiKey=e1d001bb4e184ec5b1cabd0da5447752`)
+                    
+    let data = await res.json();
+    let actual_data = data.articles;
+    console.log('data', actual_data)
+    append(actual_data)
+}
+getData();
+
+const append =  (result) => {
+    let container=document.getElementById("indian-news");
+
+    result.forEach(el => {
+       if(el.urlToImage!==null){
+        let div = document.createElement("div");
+        
+       
+
+        let img=document.createElement("img");
+        img.src=el.urlToImage;
+
+        let p = document.createElement("p")
+        p.innerText=el.title;
+
+        // let data ={
+        //     id:el.url
+        // }
+
+        div.addEventListener("click", function () {
+            Click(el);
+        });
+
+        div.append(img,p)
+        container.append(div)
+       }
+       
+    })
+
+   
+
+}
+
+ function Click(el){
+  
+   localStorage.setItem("india",JSON.stringify(el));
+   console.log(el)
+   window.location.href="./details.html";
+
+ }
