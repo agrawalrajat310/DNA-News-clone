@@ -180,8 +180,8 @@ footer p:hover {
 }
 #right_sidebar {
   display: grid;
-  width: 25%;
-  margin-right: 10%;
+  width: 30%;
+  /* margin-right: 10%; */
   height: 600px;
   height: fit-content;
 }
@@ -272,3 +272,9 @@ footer p:hover {
   margin-bottom: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+/* #footer{
+  margin-top: 50px;
+  position: sticky;
+  top:1000px
+} */
