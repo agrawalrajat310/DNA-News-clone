@@ -257,3 +257,84 @@ const append =  (result) => {
    window.location.href="./details.html";
 
  }
+
+
+ const videos = [
+  {
+    url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/10/01/2542891-01thumbnail1801721.jpeg',
+    title:'Watch: PM Modi launches 5G services in India',
+    link:'https://www.dnaindia.com/india/video-watch-pm-modi-launches-5g-services-in-india-2989431'
+  },
+  {
+    url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/10/01/2542831-whatsapp-image-2022-10-01-at-1.23.44-pm-1.jpeg',
+    title:'DNA | Russia announces absorption of 4 occupied Ukrainian regions',
+    link:'https://www.dnaindia.com/india/video-dna-russia-announces-absorption-of-4-occupied-ukrainian-regions-2989384'
+  },
+  {
+    url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/10/01/2542832-whatsapp-image-2022-10-01-at-1.23.44-pm-3.jpeg',
+    title:'DNA | What is IAMC? Know how its spreading propaganda against India',
+    link:'https://www.dnaindia.com/india/video-dna-what-is-iamc-know-how-its-spreading-propaganda-against-india-2989382'
+  },
+  {
+    url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/10/01/2542882-01thumbnail1801722.jpeg',
+    title:'WATCH:PM Modi drives car in Sweden from Delhi using 5G',
+    link:'https://www.dnaindia.com/india/video-watchpm-modi-drives-car-in-sweden-from-delhi-using-5g-2989438'
+  },
+ ]
+
+
+ const slideShow3 = () => {
+  let count = 0;
+  let div = document.getElementById("3");
+  
+  let img = document.createElement("img");
+  img.src = videos[0].url;
+
+  let p=document.createElement("p");
+  p.innerText=videos[0].title;
+ 
+  div.append(img,p);
+  count = count + 1;
+
+  setInterval(function () {
+      if (count == 3) {
+          count = 0
+      }
+      img.src = videos[count].url;
+      p.innerText=videos[count].title
+      count++;
+      div.append(img,p)
+  }, 4000)
+
+}
+
+
+slideShow3();
+
+const slideShow4 = () => {
+  let count = 1;
+  let div = document.getElementById("4");
+  
+  let img = document.createElement("img");
+  img.src = videos[1].url;
+
+  let p=document.createElement("p");
+  p.innerText=videos[1].title;
+  div.append(img,p);
+ 
+
+  
+  count = count + 1;
+
+  setInterval(function () {
+      if (count == 4) {
+          count = 1
+      }
+      img.src = videos[count].url;
+      p.innerText=videos[count].title
+      count++;
+      div.append(img,p)
+  }, 4000)
+
+}
+slideShow4()

@@ -17,7 +17,7 @@ body{
 }
 
 #first{
-   border:1px solid blue;
+   /* border:1px solid blue; */
    width:90%;
    height:auto;
    display:flex;
@@ -27,7 +27,7 @@ body{
    
 }
 #sidebar{
-   border:1px solid black;
+   /* border:1px solid black; */
    width:25%;
    height:auto;
    margin-right: 20px;
@@ -35,7 +35,7 @@ body{
     top:80px;
 }
 #right_sidebar{
-   border:1px solid black;
+   /* border:1px solid black; */
    width:25%;
    height:auto;
    margin-left: 20px;

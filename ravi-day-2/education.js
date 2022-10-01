@@ -212,4 +212,81 @@ const slideShow2 = () => {
 slideShow2()
 
 
+const videos = [
+  {
+    url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/20/2540227-20thumbnail1801486.jpeg',
+    title:'Delhi University Entrance Test (DUET) to be held in second week of October, watch for more details',
+   
+  },
+  {
+    url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/13/2538333-13thumbnail1801314.jpeg',
+    title:'DU Admissions 2022 starts via CUET: Know DU’s new admission process',
+    link:'https://www.dnaindia.com/india/video-dna-russia-announces-absorption-of-4-occupied-ukrainian-regions-2989384'
+  },
+  {
+    url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/10/2537437-10thumbnail1801266.jpg',
+    title:'DNA | What is IAMC? Know how its spreading propaganda against India',
+    link:'https://www.dnaindia.com/india/video-dna-what-is-iamc-know-how-its-spreading-propaganda-against-india-2989382'
+  },
+  
+ ]
+
+
+    const slideShow3 = () => {
+      let count = 0;
+      let div = document.getElementById("3");
+      
+      let img = document.createElement("img");
+      img.src = videos[0].url;
+
+      let p=document.createElement("p");
+      p.innerText=videos[0].title;
+    
+      div.append(img,p);
+      count = count + 1;
+
+      setInterval(function () {
+          if (count == 1) {
+              count = 0
+          }
+          img.src = videos[count].url;
+          p.innerText=videos[count].title
+          count++;
+          div.append(img,p)
+      }, 4000)
+
+    }
+
+
+    slideShow3();
+
+    const slideShow4 = () => {
+      let count = 1;
+      let div = document.getElementById("4");
+      
+      let img = document.createElement("img");
+      img.src = videos[1].url;
+
+      let p=document.createElement("p");
+      p.innerText=videos[1].title;
+      div.append(img,p);
+    
+
+      
+      count = count + 1;
+
+      setInterval(function () {
+          if (count == 2) {
+              count = 1
+          }
+          img.src = videos[count].url;
+          p.innerText=videos[count].title
+          count++;
+          div.append(img,p)
+      }, 4000)
+
+    }
+    slideShow4()
+
+
 
