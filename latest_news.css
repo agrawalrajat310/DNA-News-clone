@@ -45,7 +45,7 @@ body{
     width:40%;
 }
 
-#indian-news{
+#results{
     /* border:1px solid red; */
     width:100%;
     height: auto;
@@ -67,7 +67,7 @@ body{
 
  
 
-  #indian-news div{
+  #results div{
     /* border:1px solid red; */
     width:100%;
     height:120px;
@@ -75,7 +75,7 @@ body{
      margin-top: 10px;
      background-color: #FFFFFF;
   }
-  #indian-news div img{
+  #results div img{
     padding: 10px;
     width:30%;
     height:100px;

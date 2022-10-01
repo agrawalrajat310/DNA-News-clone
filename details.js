@@ -38,7 +38,7 @@ let poster = [
     let id;
     function Start() {
   
-      let container = document.getElementById("breaking_news");
+      let container = document.getElementById("results");
   
       let i = 0;
     
@@ -61,8 +61,8 @@ let poster = [
 
 
 const showDetails=async()=>{
-  console.log("hiiii")
-    let data = JSON.parse(localStorage.getItem("india"));
+  console.log("h")
+    let data = JSON.parse(localStorage.getItem("results"));
     let details_div=document.getElementById("middle")
     let div = document.createElement("div");
     
