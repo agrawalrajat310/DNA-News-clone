@@ -183,7 +183,7 @@ footer p:hover {
   width: 25%;
   margin-right: 10%;
   height: 600px;
-  height: fit-content;
+  /* height: fit-content; */
 }
 #rtrending {
   height: 250px;
