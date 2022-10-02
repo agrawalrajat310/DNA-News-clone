@@ -175,14 +175,8 @@ function rightSidebar() {
 `;
 }
 
-
 export { rightSidebar };
 export { newsSlider };
 export { footer };
 export { navbar };
 export { sidebar };
-
-
-
-
-

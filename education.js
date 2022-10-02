@@ -1,30 +1,24 @@
 // e1d001bb4e184ec5b1cabd0da5447752
 
-
-  
 import { navbar } from "./components/navbar.js";
 
 document.getElementById("navbar").innerHTML = navbar();
 
-import {newsSlider} from './components/navbar.js';
+import { newsSlider } from "./components/navbar.js";
 
-document.getElementById('news_slider').innerHTML=newsSlider();
+document.getElementById("news_slider").innerHTML = newsSlider();
 
 import { sidebar } from "./components/navbar.js";
 
-document.getElementById('sidebar').innerHTML=sidebar();
+document.getElementById("sidebar").innerHTML = sidebar();
 
-import {rightSidebar} from './components/navbar.js';
+import { rightSidebar } from "./components/navbar.js";
 
-document.getElementById('right_sidebar').innerHTML=rightSidebar();
-
-
-
+document.getElementById("right_sidebar").innerHTML = rightSidebar();
 
 import { footer } from "./components/navbar.js";
 
 document.getElementById("footer").innerHTML = footer();
-
 
 let query = document.getElementById("query");
 query.disabled = true;
@@ -86,207 +80,189 @@ const displayData = (data) => {
   });
 };
 
-
-
 let poster = [
-    'Three new credit card rules coming into effect from Oct.',
-    'Ankita Bhandari murder case to be tried in fast-track court; Uttarakhand CM announces Rs 25 lakh compensation for family',
-    'Gandhis still keen on Gehlot contesting party prez poll...',
-    'Amid F-16 strain, US talks of India-Pakistan dialogue',
-    'Centre bans PFI for 5 years under anti-terror law UAPA ...'
-      ]
-      
-      let id;
-      function Start() {
-    
-        let container = document.getElementById("breaking_news");
-    
-        let i = 0;
-      
-        let p = document.createElement("p");
-    
-        let id = setInterval(function () {
-          if (i === 5) {
-            i = 0;
-          }
-          p.innerText = poster[i];
-          container.append(p);
-          i++;
-        }, 2000);
-      }
-      
-      function Stop() {
-         clearInterval(id)
-      }
-      Start() 
+  "Three new credit card rules coming into effect from Oct.",
+  "Ankita Bhandari murder case to be tried in fast-track court; Uttarakhand CM announces Rs 25 lakh compensation for family",
+  "Gandhis still keen on Gehlot contesting party prez poll...",
+  "Amid F-16 strain, US talks of India-Pakistan dialogue",
+  "Centre bans PFI for 5 years under anti-terror law UAPA ...",
+];
 
+let id;
+function Start() {
+  let container = document.getElementById("breaking_news");
 
+  let i = 0;
 
- const arr = [
-    {
-        url:"https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/06/2536435-edu-main.jpg",
-        title:"From NTA NEET UG 2022 Result to CBSE Compartment Result 2022...",
-        id:1,
-    },
+  let p = document.createElement("p");
 
-    {
-        url:"https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/05/2536104-teach.jpg",
-        title:"Teacher's day: 5 teachers who transformed education scenario in India",
-        id:2,
-    },
-    {
-        url:"https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/08/2537096-neet-result.jpg",
-        title:"Here are 5 courses Biology students can opt for after Class...",
-        id:3,
-    },
-    {
-        url:" https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/08/24/2532826-nirish-rajput-tb.jpg",
-        title:"Meet IAS officer Nirish Rajput, who sold newspapers, studied...",
-        id:4,
-    },
-    {
-        url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/08/21/2531871-students-4-1.jpg',
-        title:"Are you a college student? These 5 part-time...",
-        id:5,
+  let id = setInterval(function () {
+    if (i === 5) {
+      i = 0;
     }
- ]
-
- const slideShow = () => {
-    let count = 0;
-    let div = document.getElementById("1");
-    
-    let img = document.createElement("img");
-    img.src = arr[0].url;
-
-    let p=document.createElement("p");
-    p.innerText=arr[0].title;
-
-    div.onclick=function(){
-        window.location.href="./photo.html"
-    }
-   
-    div.append(img,p);
-    count = count + 1;
-
-    setInterval(function () {
-        if (count == 4) {
-            count = 0
-        }
-        img.src = arr[count].url;
-        p.innerText=arr[count].title
-        count++;
-        div.append(img,p)
-    }, 4000)
-
+    p.innerText = poster[i];
+    container.append(p);
+    i++;
+  }, 2000);
 }
 
+function Stop() {
+  clearInterval(id);
+}
+Start();
+
+const arr = [
+  {
+    url: "https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/06/2536435-edu-main.jpg",
+    title: "From NTA NEET UG 2022 Result to CBSE Compartment Result 2022...",
+    id: 1,
+  },
+
+  {
+    url: "https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/05/2536104-teach.jpg",
+    title:
+      "Teacher's day: 5 teachers who transformed education scenario in India",
+    id: 2,
+  },
+  {
+    url: "https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/08/2537096-neet-result.jpg",
+    title: "Here are 5 courses Biology students can opt for after Class...",
+    id: 3,
+  },
+  {
+    url: " https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/08/24/2532826-nirish-rajput-tb.jpg",
+    title: "Meet IAS officer Nirish Rajput, who sold newspapers, studied...",
+    id: 4,
+  },
+  {
+    url: "https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/08/21/2531871-students-4-1.jpg",
+    title: "Are you a college student? These 5 part-time...",
+    id: 5,
+  },
+];
+
+const slideShow = () => {
+  let count = 0;
+  let div = document.getElementById("1");
+
+  let img = document.createElement("img");
+  img.src = arr[0].url;
+
+  let p = document.createElement("p");
+  p.innerText = arr[0].title;
+
+  div.onclick = function () {
+    window.location.href = "./photo.html";
+  };
+
+  div.append(img, p);
+  count = count + 1;
+
+  setInterval(function () {
+    if (count == 4) {
+      count = 0;
+    }
+    img.src = arr[count].url;
+    p.innerText = arr[count].title;
+    count++;
+    div.append(img, p);
+  }, 4000);
+};
 
 slideShow();
 
 const slideShow2 = () => {
-    let count = 1;
-    let div = document.getElementById("2");
-    
-    let img = document.createElement("img");
-    img.src = arr[1].url;
+  let count = 1;
+  let div = document.getElementById("2");
 
-    let p=document.createElement("p");
-    p.innerText=arr[1].title;
-    div.append(img,p);
-   
+  let img = document.createElement("img");
+  img.src = arr[1].url;
 
-    
-    count = count + 1;
+  let p = document.createElement("p");
+  p.innerText = arr[1].title;
+  div.append(img, p);
 
-    setInterval(function () {
-        if (count == 5) {
-            count = 1
-        }
-        img.src = arr[count].url;
-        p.innerText=arr[count].title
-        count++;
-        div.append(img,p)
-    }, 4000)
+  count = count + 1;
 
-}
-slideShow2()
-
+  setInterval(function () {
+    if (count == 5) {
+      count = 1;
+    }
+    img.src = arr[count].url;
+    p.innerText = arr[count].title;
+    count++;
+    div.append(img, p);
+  }, 4000);
+};
+slideShow2();
 
 const videos = [
   {
-    url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/20/2540227-20thumbnail1801486.jpeg',
-    title:'Delhi University Entrance Test (DUET) to be held in second week of October, watch for more details',
-   
+    url: "https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/20/2540227-20thumbnail1801486.jpeg",
+    title:
+      "Delhi University Entrance Test (DUET) to be held in second week of October, watch for more details",
   },
   {
-    url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/13/2538333-13thumbnail1801314.jpeg',
-    title:'DU Admissions 2022 starts via CUET: Know DU’s new admission process',
-    link:'https://www.dnaindia.com/india/video-dna-russia-announces-absorption-of-4-occupied-ukrainian-regions-2989384'
+    url: "https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/13/2538333-13thumbnail1801314.jpeg",
+    title:
+      "DU Admissions 2022 starts via CUET: Know DU’s new admission process",
+    link: "https://www.dnaindia.com/india/video-dna-russia-announces-absorption-of-4-occupied-ukrainian-regions-2989384",
   },
   {
-    url:'https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/10/2537437-10thumbnail1801266.jpg',
-    title:'DNA | What is IAMC? Know how its spreading propaganda against India',
-    link:'https://www.dnaindia.com/india/video-dna-what-is-iamc-know-how-its-spreading-propaganda-against-india-2989382'
+    url: "https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/09/10/2537437-10thumbnail1801266.jpg",
+    title:
+      "DNA | What is IAMC? Know how its spreading propaganda against India",
+    link: "https://www.dnaindia.com/india/video-dna-what-is-iamc-know-how-its-spreading-propaganda-against-india-2989382",
   },
-  
- ]
+];
 
+const slideShow3 = () => {
+  let count = 0;
+  let div = document.getElementById("3");
 
-    const slideShow3 = () => {
-      let count = 0;
-      let div = document.getElementById("3");
-      
-      let img = document.createElement("img");
-      img.src = videos[0].url;
+  let img = document.createElement("img");
+  img.src = videos[0].url;
 
-      let p=document.createElement("p");
-      p.innerText=videos[0].title;
-    
-      div.append(img,p);
-      count = count + 1;
+  let p = document.createElement("p");
+  p.innerText = videos[0].title;
 
-      setInterval(function () {
-          if (count == 1) {
-              count = 0
-          }
-          img.src = videos[count].url;
-          p.innerText=videos[count].title
-          count++;
-          div.append(img,p)
-      }, 4000)
+  div.append(img, p);
+  count = count + 1;
 
+  setInterval(function () {
+    if (count == 1) {
+      count = 0;
     }
+    img.src = videos[count].url;
+    p.innerText = videos[count].title;
+    count++;
+    div.append(img, p);
+  }, 4000);
+};
 
+slideShow3();
 
-    slideShow3();
+const slideShow4 = () => {
+  let count = 1;
+  let div = document.getElementById("4");
 
-    const slideShow4 = () => {
-      let count = 1;
-      let div = document.getElementById("4");
-      
-      let img = document.createElement("img");
-      img.src = videos[1].url;
+  let img = document.createElement("img");
+  img.src = videos[1].url;
 
-      let p=document.createElement("p");
-      p.innerText=videos[1].title;
-      div.append(img,p);
-    
+  let p = document.createElement("p");
+  p.innerText = videos[1].title;
+  div.append(img, p);
 
-      
-      count = count + 1;
+  count = count + 1;
 
-      setInterval(function () {
-          if (count == 2) {
-              count = 1
-          }
-          img.src = videos[count].url;
-          p.innerText=videos[count].title
-          count++;
-          div.append(img,p)
-      }, 4000)
-
+  setInterval(function () {
+    if (count == 2) {
+      count = 1;
     }
-    slideShow4()
-
-
-
+    img.src = videos[count].url;
+    p.innerText = videos[count].title;
+    count++;
+    div.append(img, p);
+  }, 4000);
+};
+slideShow4();
