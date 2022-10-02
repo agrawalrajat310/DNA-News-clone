@@ -122,7 +122,11 @@ Viral News</div>
 Lifestyle</div>
 
 <div id="education"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-education.svg" alt="">&nbsp;
+
+Edducation</div>
+
 Education</div>
+
 
 <div id="business">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-business.svg" alt="">&nbsp;
 Business</div>
@@ -172,6 +176,10 @@ export {rightSidebar}
 export {newsSlider}
 export {footer}
 export {navbar}
+
 export {sidebar}
+
+
+
 
 

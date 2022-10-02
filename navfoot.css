@@ -180,10 +180,17 @@ footer p:hover {
 }
 #right_sidebar {
   display: grid;
+
+  width: 30%;
+  /* margin-right: 10%; */
+  height: 600px;
+  height: fit-content;
+
   width: 25%;
   margin-right: 10%;
   height: 600px;
   /* height: fit-content; */
+
 }
 #rtrending {
   height: 250px;
@@ -272,7 +279,19 @@ footer p:hover {
   margin-bottom: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+
+/* #footer{
+  margin-top: 50px;
+  position: sticky;
+  top:1000px
+} */
+
+
+
+
 #query{
+
   background-color: #ffde2f;
   border: none;
 }
