@@ -121,7 +121,11 @@ Viral News</div>
 Lifestyle</div>
 
 <div id="education"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-education.svg" alt="">&nbsp;
+
+Edducation</div>
+
 Education</div>
+
 
 <div id="business">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-business.svg" alt="">&nbsp;
 Business</div>
@@ -167,9 +171,23 @@ function rightSidebar() {
 </div>
 `;
 }
+<<<<<<< HEAD:fw19_0691/components/navbar.js
 
 export { rightSidebar };
 export { newsSlider };
 export { footer };
 export { navbar };
 export { sidebar };
+=======
+export {rightSidebar}
+export {newsSlider}
+export {footer}
+export {navbar}
+
+export {sidebar}
+
+
+
+
+
+>>>>>>> main:components/navbar.js
