@@ -278,3 +278,9 @@ footer p:hover {
   position: sticky;
   top:1000px
 } */
+
+
+#query {
+  background-color: #ffde2f;
+  border: none;
+}

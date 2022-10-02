@@ -45,6 +45,8 @@ body{
     padding:5px;
     width:40%;
 }
+
+
 #middle img{
     width:100%;
 }
@@ -64,3 +66,7 @@ body{
     font-size: 25px;
     color:black;
 } */
+#query {
+    background-color: #ffde2f;
+    border: none;
+  }

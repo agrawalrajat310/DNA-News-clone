@@ -43,6 +43,12 @@ body{
 #middle{
     padding:5px;
     width:40%;
+  
+
+}
+
+#middle img{
+   width: 40%;
 }
 
 #results{
