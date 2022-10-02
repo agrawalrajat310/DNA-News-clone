@@ -1,18 +1,17 @@
-function navbar(){
-    return `  <div id="container">
+function navbar() {
+  return `  <div id="container">
     <div class="logo">
         <img src="https://english.cdn.zeenews.com/static/apprun/dna/icons/logodna.png" alt="DNA_logo">
     </div>
     <div class="search-logo">
-    <input type="text" id="query"> <button id="SearchButton">Search</button>
-        <svg id="searchNews" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
           </svg>
     </div>
-</div>`
+</div>`;
 }
-function footer(){
-    return `<div id="ftop">
+function footer() {
+  return `<div id="ftop">
     <div class="flogo">
         <img src="https://english.cdn.zeenews.com/static/apprun/dna/icons/logodna.png" alt="">
     </div>
@@ -97,10 +96,10 @@ function footer(){
 </div>
 <div>
     <p>©1998-2022 Diligent Media Corporation Limited, All Rights Reserved.</p>
-</div>`
+</div>`;
 }
-function sidebar(){
-    return `  <div id="latestnews"> &nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-latestnews.svg"
+function sidebar() {
+  return `  <div id="latestnews"> &nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-latestnews.svg"
     alt="">&nbsp;&nbsp;Latest News</div>
 <div id="photos"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-photos.svg" alt="">&nbsp Photos
 </div>
@@ -133,14 +132,14 @@ Business</div>
 <div id="world">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-world.svg" alt="">&nbsp; World
 </div>
 <div id="ezmall"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/ezmall-icon1.png" alt="">&nbsp; Ezmall
-</div>`
+</div>`;
 }
-function newsSlider(){
-    return ` <div id="TP">Top News</div>   
-    <div id="breaking_news"></div>`
+function newsSlider() {
+  return ` <div id="TP">Top News</div>   
+    <div id="breaking_news"></div>`;
 }
-function rightSidebar(){
-    return `    <div id="rtrending">
+function rightSidebar() {
+  return `    <div id="rtrending">
     <div>TRENDING NEWS TOPICS</div>
     <div>Narendra Modi</div>
     <div>Brahmastra</div>
@@ -170,8 +169,16 @@ function rightSidebar(){
     </div>
 </div>
 </div>
-`
+`;
 }
+<<<<<<< HEAD:fw19_0691/components/navbar.js
+
+export { rightSidebar };
+export { newsSlider };
+export { footer };
+export { navbar };
+export { sidebar };
+=======
 export {rightSidebar}
 export {newsSlider}
 export {footer}
@@ -183,3 +190,4 @@ export {sidebar}
 
 
 
+>>>>>>> main:components/navbar.js

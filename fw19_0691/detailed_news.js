@@ -94,44 +94,45 @@ Start();
 
 // Showing Fetch data to container div you can append data to your respective div
 
-const photos = async () => {
-  try {
-    let res = await fetch(
-      `https://masai-mock-api-2.herokuapp.com/news/top-headlines?country=in`
-    );
-    let data = await res.json();
-    console.log(data.articles);
-    displayData(data.articles);
-  } catch (error) {
-    console.log(error);
-  }
-};
+// const photos = async () => {
+//   try {
+//     let res = await fetch(
+//       `https://masai-mock-api-2.herokuapp.com/news/top-headlines?country=in`
+//     );
+//     let data = await res.json();
+//     console.log(data.articles);
+//     displayData(data.articles);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
 
-photos();
+// photos();
 
-const displayData = (data) => {
-  data.forEach((ele) => {
-    let container = document.getElementById("indian-news");
+function append() {
+  let data = JSON.parse(localStorage.getItem("detailed_news"));
 
-    let div = document.createElement("div");
+  let cont = document.getElementById("indian-news");
 
-    let image = document.createElement("img");
-    image.src = ele.urlToImage;
+  let div = document.createElement("div");
 
-    let title = document.createElement("h4");
-    title.innerText = ele.title;
+  let img = document.createElement("img");
+  img.src = data.urlToImage;
 
-    div.onclick = () => {
-      detailed_news(ele);
-    };
+  let title = document.createElement("h3");
+  title.innerText = data.title;
 
-    div.append(image, title);
-    container.append(div);
-  });
-};
+  let des = document.createElement("p");
+  des.innerText = data.description;
 
-function detailed_news(ele) {
-  localStorage.setItem("detailed_news", JSON.stringify(ele));
+  let conten = document.createElement("p");
+  conten.innerText = data.content;
 
-  window.location.href = "./detailed_news.html";
+  div.append(img, title, des, conten);
+
+  cont.append(div);
+
+  console.log("hii");
 }
+
+append();
