@@ -20,6 +20,7 @@
   font-size: 18px;
   margin-right: 20px;
   cursor: pointer;
+  display:flex;
 }
 
 #container img {
@@ -302,3 +303,8 @@ footer p:hover {
   background-color: #ffde2f;
   border: none;
 }
+
+ a{
+  text-decoration: none;
+  color:black;
+ }

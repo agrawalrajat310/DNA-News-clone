@@ -50,14 +50,18 @@ document.querySelector("#searchNews").addEventListener("click", () => {
 });
 
 // adding event to search button to fetch the data from api
-let Search = document.getElementById("SearchButton");
-Search.addEventListener("click", () => {
+// let Search = document.getElementById("SearchButton");
+// Search.addEventListener("load", () => {
+//   SearchNews();
+// });
+
+window.onload=function(){
   SearchNews();
-});
+}
 
 // fetching data from api but works only for two keyWords "tesla" and "twitter"
-const SearchNews = async () => {
-  let query = document.getElementById("query").value;
+async function   SearchNews() {
+  let query = JSON.parse(localStorage.getItem("query"))
 
   try {
     let res = await fetch(`https://masai-api.herokuapp.com/news?q=${query}`);

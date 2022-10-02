@@ -133,7 +133,7 @@ body{
 
 }
 
-button{
+  #btn{
    width:100%;
    padding: 12px;
    border-radius: 25px;

@@ -110,3 +110,10 @@ img + p{
 #indian-news+h2{
    margin-top:50px;
 }
+#btn{
+   width:100%;
+   padding: 12px;
+   border-radius: 25px;
+   margin-bottom: 30px;
+   margin-top: 20px;
+}

@@ -59,15 +59,16 @@ Search.addEventListener("click", () => {
 const SearchNews = async () => {
   let query = document.getElementById("query").value;
 
-  try {
-    let res = await fetch(`https://masai-api.herokuapp.com/news?q=${query}`);
-    let data = await res.json();
-    console.log(data.articles);
-    displayData(data.articles);
-  } catch (error) {
-    console.log(error);
+  localStorage.setItem("query",JSON.stringify(query));
+   window.location.href="./search.html";
+  // try {
+  //   let res = await fetch(`https://masai-api.herokuapp.com/news?q=${query}`);
+  //   let data = await res.json();
+  //   console.log(data.articles);
+  //   displayData(data.articles);
+  // } catch (error) {
+  //   console.log(error);
   }
-};
 
 // Showing Fetch data to container div you can append data to your respective div
 // const displayData = (data) => {

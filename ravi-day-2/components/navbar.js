@@ -101,8 +101,8 @@ function footer(){
 }
 function sidebar(){
     return `  <div id="latestnews"> &nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-latestnews.svg"
-    alt="">&nbsp;&nbsp;Latest News</div>
-<div id="photos"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-photos.svg" alt="">&nbsp Photos
+    alt="">&nbsp;&nbsp;  <a href="./latest_news.html">Latest News</a> </div>
+<div id="photos"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-photos.svg" alt="">&nbsp  <a href="">Photos</a>
 </div>
 <div id="indAus"> &nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-cricket.svg" alt="">&nbsp; Ind
 vs Aus</div>
@@ -110,7 +110,7 @@ vs Aus</div>
 </div>
 <div id="explainers">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-explainer.svg" alt="">&nbsp;
 Explainers</div>
-<div id="india">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-india.svg" alt="">&nbsp; India
+<div id="india">&nbsp;   <img src="https://english.cdn.zeenews.com/static/public/icons/icons-india.svg" alt="">&nbsp;  <a href="./index.html">India </a>
 </div>
 <div id="entertainment">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-entertainment.svg" alt="">&nbsp;
 Entertainment</div>
@@ -121,12 +121,12 @@ Viral News</div>
 <div id="lifestyle">&nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-lifestyle.svg" alt="">&nbsp;
 Lifestyle</div>
 
-<div id="education"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-education.svg" alt="">&nbsp;
-Education</div>
+<div id="education"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/icons-education.svg" alt="">&nbsp; <a href="./education.html">Education </a>
+</div>
 
-<div id="business">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-business.svg" alt="">&nbsp;
+<div id="business">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-business.svg" alt="">&nbsp;  <a href=""></a>
 Business</div>
-<div id="world">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-world.svg" alt="">&nbsp; World
+<div id="world">&nbsp; <img src="https://english.cdn.zeenews.com/static/public/icons/icons-world.svg" alt="">&nbsp; World 
 </div>
 <div id="ezmall"> &nbsp;<img src="https://english.cdn.zeenews.com/static/public/icons/ezmall-icon1.png" alt="">&nbsp; Ezmall
 </div>`
