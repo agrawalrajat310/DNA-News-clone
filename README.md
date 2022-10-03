@@ -1,7 +1,7 @@
 # fertile-distance-9246
 
 
-## We are a team of 5 members making clone of   https://www.dnaindia.com/ under construct week of Unit - 3 in MASAI FULLSTACK WEB DEVELOPMENT COURSE.
+## We are a team of 4 members making clone of   https://www.dnaindia.com/ under construct week of Unit - 3 in MASAI FULLSTACK WEB DEVELOPMENT COURSE.
 
  
                                                  "About Project"
