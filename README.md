@@ -18,7 +18,7 @@
 
 3. User can see Homepage of our website.
 
-4. User should see different category of news page eg: National, Internation, sports, etc. depending on kind of news, it will vary.
+4. User should see different category of news page eg: National, International, sports, etc. depending on kind of news, it will vary.
 
 5. User should able to filter and sort news according to their readability.
 
